@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/products")
 public class ProductController {
 
-    @GetMapping(path = "{productId}")
+    @GetMapping(path = "/{productId}")
     public String getProductInfo(@PathVariable String productId) {
 //        try {
 //            Thread.sleep(2000);
